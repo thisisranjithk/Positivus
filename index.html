@@ -7,5 +7,626 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <main class="max-w-7xl mx-auto px-4">
+      <header class="mt-12 flex items-center justify-between">
+        <div class="log">
+          <img src="./assets/svg/Logo.svg" alt="logo" />
+        </div>
+        <nav class="hidden lg:flex items-center text-[20px] text-nowrap">
+          <ul class="flex gap-x-10 mx-8">
+            <l1>About us</l1>
+            <l1>Services</l1>
+            <l1>Use cases</l1>
+            <l1>Pricing</l1>
+            <l1>Blog</l1>
+          </ul>
+          <button class="button-outline">Request a quote</button>
+        </nav>
+      </header>
+      <section id="Hero" class="flex justify-center md:justify-between my-16">
+        <div class="max-w-lg">
+          <h3 class="text-5xl/16 md:text-5xl lg:text-6xl/17">
+            Navigating the digital landscape for success
+          </h3>
+          <img
+            class="md:hidden"
+            src="./assets/svg/hero-Illustration.svg"
+            alt="hero-anouncement"
+          />
+          <p class="my-8">
+            Our digital marketing agency helps businesses grow and succeed
+            online through a range of services including SEO, PPC, social media
+            marketing, and content creation.
+          </p>
+          <button class="button-dark">Book a Consultation</button>
+        </div>
+        <div class="hidden md:block">
+          <img
+            src="./assets/svg/hero-Illustration.svg"
+            alt="hero-anouncement"
+          />
+        </div>
+      </section>
+      <section
+        id="Companys"
+        class="flex flex-wrap gap-6 md:gap-0 items-center justify-between w-full"
+      >
+        <img src="./assets/companys/amazon-logo.svg" alt="amazon-logo" />
+        <img src="./assets//companys/dribble-logo.svg" alt="dribble-logo" />
+        <img src="./assets/companys/hubspot-logo.svg" alt="hubspot-logo" />
+        <img src="./assets//companys/netflix-logo.svg" alt="netflix-logo" />
+        <img src="./assets/companys/notion-logo.svg" alt="notion-logo" />
+        <img src="./assets/companys/zoom-logo.svg" alt="zoom-logo" />
+      </section>
+      <section id="Services">
+        <header class="my-14 flex items-center">
+          <span class="bg-lime text-3xl p-2 rounded-md mr-8">Services</span>
+          <div class="max-w-lg">
+            At our digital marketing agency, we offer a range of services to
+            help businesses grow and succeed online. These services include:
+          </div>
+        </header>
+        <!-- services cards container -->
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 my-6">
+          <!-- Card 1 -->
+          <div class="card-container bg-dust">
+            <div class="flex flex-col justify-between">
+              <h5 class="text-xl md:text-2xl lg:text-3xl">
+                <span class="bg-lime rounded-md p-1 pb-2"> Search engine </span>
+                <br />
+                <span class="bg-lime p-1"> optimization </span>
+              </h5>
+              <button class="flex items-center gap-3">
+                <img src="./assets/svg/arrow-lime.svg" alt="link-arrow" />
+                Learn More
+              </button>
+            </div>
+            <img
+              src="./assets/services/service-Illustration-1.svg"
+              alt="search-icon"
+            />
+          </div>
+          <!-- Card 2 -->
+          <div class="card-container bg-lime">
+            <div class="flex flex-col justify-between">
+              <h5 class="text-xl md:text-2xl lg:text-3xl">
+                <span class="bg-white rounded-md p-1 pb-2">
+                  Pay-per-click
+                </span>
+                <br />
+                <span class="bg-white p-1"> advertising</span>
+              </h5>
+              <button class="flex items-center gap-3">
+                <img src="./assets/svg/arrow-lime.svg" alt="link-arrow" />
+                Learn More
+              </button>
+            </div>
+            <img
+              src="./assets/services/service-Illustration-2.svg"
+              alt="search-icon"
+            />
+          </div>
+          <!-- Card 3 -->
+          <div class="card-container bg-primary-dark">
+            <div class="flex flex-col justify-between">
+              <h5 class="text-xl md:text-2xl lg:text-3xl">
+                <span class="bg-white rounded-md p-1 pb-2"> Social Media </span>
+                <br />
+                <span class="bg-white p-1"> marketing</span>
+              </h5>
+              <button class="flex items-center gap-3 text-white">
+                <img src="./assets/svg/arrow-white.svg" alt="link-arrow" />
+                Learn More
+              </button>
+            </div>
+            <img
+              src="./assets/services/service-Illustration-3.svg"
+              alt="search-icon"
+            />
+          </div>
+          <!-- Card 4 -->
+          <div class="card-container bg-dust">
+            <div class="flex flex-col justify-between">
+              <h5 class="text-xl md:text-2xl lg:text-3xl">
+                <span class="bg-lime rounded-md p-1 pb-2"> Email </span><br />
+                <span class="bg-lime p-1"> marketing</span>
+              </h5>
+              <button class="flex items-center gap-3">
+                <img src="./assets/svg/arrow-lime.svg" alt="link-arrow" />
+                Learn More
+              </button>
+            </div>
+            <img
+              src="./assets/services/service-Illustration-4.svg"
+              alt="search-icon"
+            />
+          </div>
+          <!-- Card 5 -->
+          <div class="card-container bg-lime">
+            <div class="flex flex-col justify-between">
+              <h5 class="text-xl md:text-2xl lg:text-3xl">
+                <span class="bg-white rounded-md p-1 pb-2"> Content </span
+                ><br />
+                <span class="bg-white p-1"> Creation</span>
+              </h5>
+              <button class="flex items-center gap-3">
+                <img src="./assets/svg/arrow-lime.svg" alt="link-arrow" />
+                Learn More
+              </button>
+            </div>
+            <img
+              src="./assets/services/service-Illustration-5.svg"
+              alt="search-icon"
+            />
+          </div>
+          <!-- Card 6 -->
+          <div class="card-container bg-primary-dark">
+            <div class="flex flex-col justify-between">
+              <h5 class="text-xl md:text-2xl lg:text-3xl">
+                <span class="bg-white rounded-md p-1 pb-2">
+                  Analytics and
+                </span>
+                <br />
+                <span class="bg-white p-1"> Tracking</span>
+              </h5>
+              <button class="flex items-center gap-3 text-white">
+                <img src="./assets/svg/arrow-white.svg" alt="link-arrow" />
+                Learn More
+              </button>
+            </div>
+            <img
+              src="./assets/services/service-Illustration-6.svg"
+              alt="search-icon"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="Proposal" class="flex items-center justify-center my-14">
+        <div
+          class="bg-dust p-12 flex justify-between relative w-full rounded-xl"
+        >
+          <div>
+            <h4 class="text-2xl">Let’s make things happen</h4>
+            <p class="max-w-lg my-4">
+              Contact us today to learn more about how our digital marketing
+              services can help your business grow and succeed online.
+            </p>
+            <button class="button-dark">Get your fee proposal</button>
+          </div>
+          <img
+            src="./assets//svg/proposal-Illustration.svg"
+            alt="proposal-Illustration"
+            class="h-[328px] w-[494px] hidden lg:block absolute top-[-20px] right-8"
+          />
+        </div>
+      </section>
+      <section id="CaseStudies">
+        <header class="my-14 flex items-center flex-wrap">
+          <span
+            class="bg-lime text-2xl text-nowrap md:text-3xl p-1 rounded-md mr-8"
+            >Case studies</span
+          >
+          <div class="max-w-lg mt-4 md:mt-0">
+            Explore Real-Life Examples of Our Proven Digital Marketing Success
+            through Our Case Studies
+          </div>
+        </header>
+        <div class="my-12">
+          <div
+            class="bg-primary-dark text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-12 rounded-3xl"
+          >
+            <div
+              class="border-r-0 md:border-r-2 border-lime pr-8 mx-3 mb-5 lg:mb-0"
+            >
+              <p>
+                For a local restaurant, we implemented a targeted PPC campaign
+                that resulted in a 50% increase in website traffic and a 25%
+                increase in sales.
+              </p>
+              <button class="flex items-center text-lime gap-3 mt-3">
+                Learn more
+                <img src="./assets/svg/lime-arrow.svg" alt="arrow-lime" />
+              </button>
+            </div>
+            <div
+              class="border-r-2 md:border-r-2 border-lime pr-8 mx-3 mb-5 lg:mb-0"
+            >
+              <p>
+                For a B2B software company, we developed an SEO strategy that
+                resulted in a first page ranking for key keywords and a 200%
+                increase in organic traffic.
+              </p>
+              <button class="flex items-center text-lime gap-3 mt-3">
+                Learn more
+                <img src="./assets/svg/lime-arrow.svg" alt="arrow-lime" />
+              </button>
+            </div>
+            <div class="pr-8 mx-3">
+              <p>
+                For a national retail chain, we created a social media marketing
+                campaign that increased followers by 25% and generated a 20%
+                increase in online sales.
+              </p>
+              <button class="flex items-center text-lime gap-3 mt-3">
+                Learn more
+                <img src="./assets/svg/lime-arrow.svg" alt="arrow-lime" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Accordions">
+        <header class="my-14 flex items-center flex-wrap">
+          <span
+            class="bg-lime text-2xl text-nowrap md:text-3xl p-1 rounded-md mr-8"
+            >Our Working Process</span
+          >
+          <div class="max-w-lg mt-4 md:mt-0">
+            Step-by-Step Guide to Achieving Your Business Goals
+          </div>
+        </header>
+        <!-- Accordions container -->
+        <div class="flex flex-col space-y-8 my-12">
+          <div class="bg-lime accordian-container">
+            <div class="flex justify-between w-full">
+              <h2 class="accordian-title">
+                <span class="text-5xl lg:text-6xl">O1</span>
+                Consultation
+              </h2>
+              <img
+                class="accordian-icon"
+                src="./assets/svg/minus-icon.svg"
+                alt="minus-icon"
+              />
+            </div>
+            <p class="mt-5 pt-3.5 border-t-2">
+              During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.
+            </p>
+          </div>
+          <div class="bg-dust accordian-container">
+            <div class="flex justify-between w-full">
+              <h2 class="accordian-title">
+                <span class="text-5xl lg:text-6xl">O2</span>
+                Research and Strategy Development
+              </h2>
+              <img
+                class="accordian-icon"
+                src="./assets/svg/plus-icon.svg"
+                alt="accordian-icon"
+              />
+            </div>
+            <p class="hidden mt-5 pt-3.5 border-t-2">
+              During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.
+            </p>
+          </div>
+          <div class="bg-dust accordian-container">
+            <div class="flex justify-between w-full">
+              <h2 class="accordian-title">
+                <span class="text-5xl lg:text-6xl">O3</span>
+                Implementation
+              </h2>
+              <img
+                class="accordian-icon"
+                src="./assets/svg/plus-icon.svg"
+                alt="accordian-icon"
+              />
+            </div>
+            <p class="mt-5 pt-3.5 border-t-2 hidden">
+              During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.
+            </p>
+          </div>
+          <div class="bg-dust accordian-container">
+            <div class="flex justify-between w-full">
+              <h2 class="accordian-title">
+                <span class="text-5xl lg:text-6xl">O4</span>
+                Monitoring and Optimization
+              </h2>
+              <img
+                class="accordian-icon"
+                src="./assets/svg/plus-icon.svg"
+                alt="accordian-icon"
+              />
+            </div>
+            <p class="mt-5 pt-3.5 border-t-2 hidden">
+              During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.
+            </p>
+          </div>
+          <div class="bg-dust accordian-container">
+            <div class="flex justify-between w-full">
+              <h2 class="accordian-title">
+                <span class="text-5xl lg:text-6xl">O5</span>
+                Reporting and Communication
+              </h2>
+              <img
+                class="accordian-icon"
+                src="./assets/svg/plus-icon.svg"
+                alt="accordian-icon"
+              />
+            </div>
+            <p class="mt-5 pt-3.5 border-t-2 hidden">
+              During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.
+            </p>
+          </div>
+          <div class="bg-dust accordian-container">
+            <div class="flex justify-between w-full">
+              <h2 class="accordian-title">
+                <span class="text-5xl lg:text-6xl">O6</span>
+                Continual Improvement
+              </h2>
+              <img
+                class="accordian-icon"
+                src="./assets/svg/plus-icon.svg"
+                alt="accordian-icon"
+              />
+            </div>
+            <p class="mt-5 pt-3.5 border-t-2 hidden">
+              During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="Teams">
+        <header class="my-14 flex items-center">
+          <span class="bg-lime text-2xl md:text-3xl p-1 rounded-md mr-8"
+            >Team</span
+          >
+          <div class="max-w-lg">
+            Step-by-Step Guide to Achieving Your Business Goals
+          </div>
+        </header>
+        <!-- Teams container  -->
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 mt-12">
+          <div class="border border-b-6 p-6 rounded-xl">
+            <div class="flex pb-4 items-end gap-2 relative">
+              <img src="./assets/png/john-smith.png" alt="john-smith" />
+              <div>
+                <h5 class="text-2xl">John Smith</h5>
+                <p>CEO and Founder</p>
+              </div>
+              <a href="#" class="absolute top-0 right-0">
+                <img src="./assets/svg/linkedIn-lime.svg" alt="linkedIn" />
+              </a>
+            </div>
+            <div class="pt-6 border-t-3">
+              <p>
+                10+ years of experience in digital marketing. Expertise in SEO,
+                PPC, and content strategy
+              </p>
+            </div>
+          </div>
+          <div class="border border-b-6 p-6 rounded-xl">
+            <div class="flex pb-4 items-end gap-2 relative">
+              <img src="./assets/png/jame-doe.png" alt="jame-doe" />
+              <div>
+                <h5 class="text-2xl">Jame Does</h5>
+                <p>Director of Operations</p>
+              </div>
+              <a href="#" class="absolute top-0 right-0">
+                <img src="./assets/svg/linkedIn-lime.svg" alt="linkedIn" />
+              </a>
+            </div>
+            <div class="pt-6 border-t-3">
+              <p>
+                7+ years of experience in project management and team
+                leadership. Strong organizational and communication skills
+              </p>
+            </div>
+          </div>
+          <div class="border border-b-6 p-6 rounded-xl">
+            <div class="flex pb-4 items-end gap-2 relative">
+              <img src="./assets/png/michael-brown.png" alt="michael-brown" />
+              <div>
+                <h5 class="text-2xl">Michael Brown</h5>
+                <p>Senior SEO Specialist</p>
+              </div>
+              <a href="#" class="absolute top-0 right-0">
+                <img src="./assets/svg/linkedIn-lime.svg" alt="linkedIn" />
+              </a>
+            </div>
+            <div class="pt-6 border-t-3">
+              <p>
+                5+ years of experience in SEO and content creation. Proficient
+                in keyword research and on-page optimization
+              </p>
+            </div>
+          </div>
+          <div class="border border-b-6 p-6 rounded-xl">
+            <div class="flex pb-4 items-end gap-2 relative">
+              <img src="./assets/png/emily-johnson.png" alt="emily-johnson" />
+              <div>
+                <h5 class="text-2xl">Emily Johnson</h5>
+                <p>PPC Manager</p>
+              </div>
+              <a href="#" class="absolute top-0 right-0">
+                <img src="./assets/svg/linkedIn-lime.svg" alt="linkedIn" />
+              </a>
+            </div>
+            <div class="pt-6 border-t-3">
+              <p>
+                3+ years of experience in paid search advertising. Skilled in
+                campaign management and performance analysis
+              </p>
+            </div>
+          </div>
+          <div class="border border-b-6 p-6 rounded-xl">
+            <div class="flex pb-4 items-end gap-2 relative">
+              <img src="./assets/png/brian-williams.png" alt="brian-williams" />
+              <div>
+                <h5 class="text-2xl">Brian Williams</h5>
+                <p>Social Media Specialist</p>
+              </div>
+              <a href="#" class="absolute top-0 right-0">
+                <img src="./assets/svg/linkedIn-lime.svg" alt="linkedIn" />
+              </a>
+            </div>
+            <div class="pt-6 border-t-3">
+              <p>
+                4+ years of experience in social media marketing. Proficient in
+                creating and scheduling content, analyzing metrics, and building
+                engagement
+              </p>
+            </div>
+          </div>
+          <div class="border border-b-6 p-6 rounded-xl">
+            <div class="flex pb-4 items-end gap-2 relative">
+              <img src="./assets/png/sarah-kim.png" alt="sarah-kim" />
+              <div>
+                <h5 class="text-2xl">Sarah Kim</h5>
+                <p>Content Creator</p>
+              </div>
+              <a href="#" class="absolute top-0 right-0">
+                <img src="./assets/svg/linkedIn-lime.svg" alt="linkedIn" />
+              </a>
+            </div>
+            <div class="pt-6 border-t-3">
+              <p>
+                2+ years of experience in writing and editing Skilled in
+                creating compelling, SEO-optimized content for various
+                industries
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full text-end my-12">
+          <button class="button-dark">See all team</button>
+        </div>
+      </section>
+      <section id="Contact">
+        <header class="my-14 flex items-center flex-wrap">
+          <span
+            class="bg-lime text-2xl text-nowrap md:text-3xl p-1 rounded-md mr-8"
+            >Contact Us</span
+          >
+          <div class="max-w-md mt-4 md:mt-0">
+            Connect with Us: Let's Discuss Your Digital Marketing Needs
+          </div>
+
+          <!-- contact form container -->
+          <div
+            class="flex justify-between relative my-12 w-full bg-dust p-12 rounded-2xl overflow-hidden"
+          >
+            <form class="flex flex-col gap-10 w-full md:w-1/2">
+              <div class="flex flex-col gap-2">
+                <label for="name">Name <sup class="text-red-500">*</sup></label>
+                <input
+                  class="common-input"
+                  type="text"
+                  placeholder="eg: john smith"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label for="email"
+                  >Email <sup class="text-red-500">*</sup></label
+                >
+                <input
+                  type="email"
+                  class="common-input"
+                  placeholder="eg: example@example.com"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label for="message"
+                  >Message <sup class="text-red-500">*</sup></label
+                >
+                <textarea
+                  class="common-input"
+                  placeholder="Message"
+                  name="message"
+                  id="message"
+                  rows="4"
+                  cols="50"
+                ></textarea>
+              </div>
+              <button class="button-dark">Send Message</button>
+            </form>
+            <img
+              class="hidden md:block absolute right-[-225px] h-[450px]"
+              src="./assets/svg/contact-Illustration.svg"
+              alt="contact-Illustration"
+            />
+          </div>
+        </header>
+      </section>
+      <footer
+        id="Footer"
+        class="bg-primary-dark text-white p-6 md:p-12 rounded-tr-2xl rounded-tl-2xl"
+      >
+        <nav
+          class="flex flex-col md:flex-row items-start justify-start md:justify-between gap-y-5"
+        >
+          <img src="./assets/svg/logo-white.svg" alt="logo" />
+          <ul class="flex flex-col md:flex-row gap-6 cursor-pointer">
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Use Cases</li>
+            <li>Pricing</li>
+            <li>Blog</li>
+          </ul>
+          <div class="flex gap-5">
+            <a href="#">
+              <img src="./assets/svg/linkedin.svg" alt="linkedIn" />
+            </a>
+            <a href="#">
+              <img src="./assets/svg/facebook.svg" alt="facebook" />
+            </a>
+            <a href="#">
+              <img src="./assets/svg/twitter.svg" alt="twitter" />
+            </a>
+          </div>
+        </nav>
+
+        <section class="flex my-12 flex-wrap gap-5">
+          <div class="flex-1 flex flex-col gap-4">
+            <h5>
+              <span class="bg-lime text-black p-2 rounded-lg font-bold"
+                >Contact Us:</span
+              >
+            </h5>
+            <p>Email: info@positivus.com</p>
+            <p>Phone: 555-567-8901</p>
+            <p>Address: 1234 Main St Moonstone City, Stardust State 12345</p>
+          </div>
+          <div
+            class="bg-[#292A32] flex-1 p-6 md:p-12 flex flex-col lg:flex-row items-center gap-5 justify-center md:justify-between rounded-xl"
+          >
+            <input
+              type="text"
+              class="p-4 border-2 w-full border-primary-white rounded-lg bg-[#292A32]"
+              placeholder="Email"
+            />
+            <button class="button-lime w-full">Subscribe to News</button>
+          </div>
+        </section>
+        <div class="pt-6 border-t-2 border-white">
+          <p>
+            &copy; 2025 Positivus. All Rights Reserved.
+
+            <a href="#" class="underline ml-6"> Privacy Policy</a>
+          </p>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>

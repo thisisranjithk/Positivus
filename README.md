@@ -27,7 +27,7 @@ Positivus is a sleek, modern, and fully responsive static web page built using *
 
 ## 📸 Preview
 
-![Positivus Screenshot]("./assets/preview/desktop-preview.png")
+![Positivus Screenshot](assets/preview/desktop-preview.png)
 
 ---
 

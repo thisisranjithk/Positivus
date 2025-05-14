@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Positivus</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <main class="max-w-7xl mx-auto px-4">
@@ -14,16 +15,40 @@
         </div>
         <nav class="hidden lg:flex items-center text-[20px] text-nowrap">
           <ul class="flex gap-x-10 mx-8">
-            <l1>About us</l1>
-            <l1>Services</l1>
-            <l1>Use cases</l1>
-            <l1>Pricing</l1>
-            <l1>Blog</l1>
+            <l1 class="cursor-pointer">About us</l1>
+            <l1 class="cursor-pointer">Services</l1>
+            <l1 class="cursor-pointer">Use cases</l1>
+            <l1 class="cursor-pointer">Pricing</l1>
+            <l1 class="cursor-pointer">Blog</l1>
           </ul>
           <button class="button-outline">Request a quote</button>
         </nav>
+
+        <div id="hamburger" class="block md:hidden cursor-pointer">
+          <img
+            class="h-14 w-14"
+            src="./assets/svg/hamburger-menu.svg"
+            alt="hamburger-icon"
+          />
+        </div>
       </header>
-      <section id="Hero" class="flex justify-center md:justify-between my-16">
+      <!-- Mobile Nav Menu -->
+      <nav
+        id="mobileMenu"
+        class="hidden md:hidden duration-500 flex-col text-[20px] text-nowrap my-4"
+      >
+        <ul class="flex flex-col gap-y-8">
+          <l1 class="cursor-pointer">About us</l1>
+          <l1 class="cursor-pointer">Services</l1>
+          <l1 class="cursor-pointer">Use cases</l1>
+          <l1 class="cursor-pointer">Pricing</l1>
+          <l1 class="cursor-pointer">Blog</l1>
+        </ul>
+        <div>
+          <button class="button-outline mt-5">Request a quote</button>
+        </div>
+      </nav>
+      <section id="Hero" class="flex justify-start md:justify-between my-16">
         <div class="max-w-lg">
           <h3 class="text-5xl/16 md:text-5xl lg:text-6xl/17">
             Navigating the digital landscape for success

@@ -190,6 +190,9 @@
   .relative {
     position: relative;
   }
+  .static {
+    position: static;
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -271,6 +274,9 @@
   .ml-6 {
     margin-left: calc(var(--spacing) * 6);
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
@@ -280,14 +286,17 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
+  .h-14 {
+    height: calc(var(--spacing) * 14);
   }
   .h-\[328px\] {
     height: 328px;
   }
   .h-\[450px\] {
     height: 450px;
+  }
+  .w-14 {
+    width: calc(var(--spacing) * 14);
   }
   .w-\[494px\] {
     width: 494px;
@@ -307,23 +316,14 @@
   .flex-1 {
     flex: 1;
   }
-  .flex-grow {
-    flex-grow: 1;
-  }
   .grow {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -382,6 +382,9 @@
   }
   .gap-y-5 {
     row-gap: calc(var(--spacing) * 5);
+  }
+  .gap-y-8 {
+    row-gap: calc(var(--spacing) * 8);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -474,9 +477,6 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
-  .pt-3 {
-    padding-top: calc(var(--spacing) * 3);
-  }
   .pt-3\.5 {
     padding-top: calc(var(--spacing) * 3.5);
   }
@@ -525,9 +525,6 @@
   .text-nowrap {
     text-wrap: nowrap;
   }
-  .text-wrap {
-    text-wrap: wrap;
-  }
   .text-black {
     color: var(--color-black);
   }
@@ -543,9 +540,9 @@
   .underline {
     text-decoration-line: underline;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+  .duration-500 {
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
   }
   .md\:mt-0 {
     @media (width >= 48rem) {
@@ -701,6 +698,7 @@
 .accordian-icon {
   height: calc(var(--spacing) * 12);
   width: calc(var(--spacing) * 12);
+  cursor: pointer;
   @media (width >= 48rem) {
     height: calc(var(--spacing) * 14);
   }
@@ -709,6 +707,7 @@
   }
 }
 .button-dark {
+  cursor: pointer;
   border-radius: var(--radius-md);
   background-color: var(--color-primary-dark);
   padding-inline: calc(var(--spacing) * 6);
@@ -723,6 +722,7 @@
   }
 }
 .button-lime {
+  cursor: pointer;
   border-radius: var(--radius-md);
   background-color: var(--color-lime);
   padding-inline: calc(var(--spacing) * 6);
@@ -737,6 +737,7 @@
   }
 }
 .button-outline {
+  cursor: pointer;
   border-radius: var(--radius-md);
   border-style: var(--tw-border-style);
   border-width: 1px;
@@ -799,10 +800,9 @@ body {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
+@property --tw-duration {
   syntax: "*";
   inherits: false;
-  initial-value: solid;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
@@ -815,7 +815,7 @@ body {
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
+      --tw-duration: initial;
     }
   }
 }

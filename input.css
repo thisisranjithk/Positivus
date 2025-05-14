@@ -45,11 +45,19 @@
 .common-input {
   @apply py-2 px-4 border-2 border-primary-dark rounded-lg bg-white;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-space-grotesk);
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* Hide scrollbar */

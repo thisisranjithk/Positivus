@@ -755,11 +755,17 @@
   padding-inline: calc(var(--spacing) * 4);
   padding-block: calc(var(--spacing) * 2);
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-space-grotesk);
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+button {
+  cursor: pointer;
 }
 ::-webkit-scrollbar {
   display: none;
